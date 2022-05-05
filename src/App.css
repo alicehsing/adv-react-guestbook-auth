@@ -17,8 +17,6 @@ bod,
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  gap: 1rem;
-  padding-top: 3rem;
 }
 
 .home {
@@ -31,6 +29,8 @@ bod,
   background-size: cover;
   min-height: 100vh;
   width: 100vw;
+  padding-top: 3rem;
+  gap: 1rem;
 }
 
 .signinbtn {
@@ -39,5 +39,5 @@ bod,
   background-color: black;
   color: aliceblue;
   font-size: larger;
-  margin-top: 200px;
+  margin-top: 180px;
 }
