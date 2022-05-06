@@ -26,7 +26,7 @@ export const UserProvider = ({ children }) => {
     if (authenticatedUser) {
       setUser(authenticatedUser);
     } else {
-      // set an error messgae of "invalid crendentials"
+      // set an error message of "invalid credentials"
       throw new Error('Invalid Credentials');
     }
   }
