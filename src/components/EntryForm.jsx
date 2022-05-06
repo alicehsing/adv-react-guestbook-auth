@@ -10,7 +10,6 @@ export default function EntryForm({ AddEntry }) {
   const handleAddEntry = async (event) => {
     event.preventDefault();
     const newEntry = await createEntry({ userId: user.id, content });
-    console.log('***NewEntry***', newEntry);
 
     AddEntry(newEntry);
     setContent('');
@@ -28,7 +27,11 @@ export default function EntryForm({ AddEntry }) {
           onChange={({ target }) => setContent(target.value)}
           className={styles.entry_text}
         />
-        <button aria-label="add an entry" onClick={handleAddEntry}>
+        <button
+          aria-label="add an entry"
+          type="submit"
+          onClick={handleAddEntry}
+        >
           Add Entry
         </button>
       </form>

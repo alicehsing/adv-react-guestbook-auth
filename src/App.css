@@ -6,7 +6,7 @@ body,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(232, 226, 226);
+  background-color: whitesmoke;
   background-size: cover;
   color: rgb(22, 21, 21);
   font-family: Arial, Helvetica, sans-serif;
@@ -107,7 +107,7 @@ body,
 }
 
 .entry_form {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +122,37 @@ body,
 }
 
 .header {
-  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 100%;
+}
+
+.header img {
+  width: auto;
+  height: 100px;
+}
+
+.signInSignOut {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-left: 600px;
+}
+
+.signInSignOut button {
+  background-color: rgb(118, 48, 167);
+  color: white;
+  font-size: medium;
+  text-shadow: salmon;
+  border-radius: 10px;
+  border: transparent;
+  width: 100px;
+  margin-right: 10px;
+  gap: 2rem;
+}
+
+.signInSignOut p {
+  color: rgb(40, 40, 38);
 }

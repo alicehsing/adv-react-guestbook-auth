@@ -6,6 +6,7 @@ export const UserContext = createContext();
 
 // a way to provide those states so other components have access to
 // Context Provider that will provide components with that state
+// Use the children prop to render child components from within a Provider
 export const UserProvider = ({ children }) => {
   const currentUser = getUser();
   //create some state
