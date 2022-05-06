@@ -8,8 +8,8 @@ export default function Home() {
       <main className={styles.home}>
         <h1>My Digital Guest Book</h1>
         <h2>Save your story. Turn the pages.</h2>
-        <Link to="/login" className={styles.signinbtn}>
-          Sign In | Sign Up
+        <Link to="/guestbook" className={styles.signinbtn}>
+          Start Writing!
         </Link>
       </main>
     </>
