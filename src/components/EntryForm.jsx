@@ -1,15 +1,24 @@
 import { useState } from 'react';
 import { useUser } from '../context/UserContext';
+import { createEntry } from '../services/entries';
+import styles from '../App.css';
 
-export default function EntryForm() {
+export default function EntryForm({ AddEntry }) {
   const [content, setContent] = useState('');
   const { user } = useUser();
 
+  const handleAddEntry = async (event) => {
+    event.preventDefault();
+    const newEntry = await createEntry({ userId: user.id, content });
+    console.log('***NewEntry***', newEntry);
+
+    AddEntry(newEntry);
+    setContent('');
+  };
+
   return (
     <div>
-      {' '}
-      EntryForm
-      <form>
+      <form onSubmit={handleAddEntry} className={styles.entry_form}>
         <textarea
           id="content"
           name="content"
@@ -17,8 +26,9 @@ export default function EntryForm() {
           required
           value={content}
           onChange={({ target }) => setContent(target.value)}
+          className={styles.entry_text}
         />
-        <button aria-label="add an entry" type="submit">
+        <button aria-label="add an entry" onClick={handleAddEntry}>
           Add Entry
         </button>
       </form>

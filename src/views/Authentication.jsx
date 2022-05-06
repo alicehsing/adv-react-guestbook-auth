@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useUser } from '../context/UserContext';
-import styles from '../App.css';
 import { useLocation, useHistory } from 'react-router-dom';
+import styles from '../App.css';
 
 export default function Authentication() {
   // track form state of email and password

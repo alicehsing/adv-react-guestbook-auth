@@ -105,3 +105,24 @@ body,
 .error {
   color: rgb(193, 17, 17);
 }
+
+.entry_form {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 1rem;
+}
+
+.entry_text {
+  width: 350px;
+  height: 100px;
+}
+
+.header {
+  background-color: cadetblue;
+  width: 100%;
+  max-width: 100%;
+}
