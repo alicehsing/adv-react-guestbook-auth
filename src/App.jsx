@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './views/Header';
 import Home from './views/Home';
 import List from './views/List';
-import Login from './views/Login';
+import Authentication from './views/Authentication';
 import styles from './App.css';
 
 export default function App() {
@@ -11,11 +11,11 @@ export default function App() {
     <main className={styles.main}>
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/login">
-            <Login />
+            <Authentication />
           </Route>
           <Route path="/guestbook">
             <Header />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from '../App.css';
 
 export default function Home() {
@@ -7,7 +8,9 @@ export default function Home() {
       <main className={styles.home}>
         <h1>My Digital Guest Book</h1>
         <h2>Save your story. Turn the pages.</h2>
-        <button className={styles.signinbtn}>Sign In | Sign Up</button>
+        <Link to="/login" className={styles.signinbtn}>
+          Sign In | Sign Up
+        </Link>
       </main>
     </>
   );

@@ -1,9 +1,12 @@
 html,
-bod,
+body,
 #root,
 .App {
   display: flex;
-  background-color: rgb(206, 204, 204);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 226, 226);
   background-size: cover;
   color: rgb(22, 21, 21);
   font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +32,7 @@ bod,
   background-size: cover;
   min-height: 100vh;
   width: 100vw;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   gap: 1rem;
 }
 
@@ -40,4 +43,64 @@ bod,
   color: aliceblue;
   font-size: larger;
   margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.authentication {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  background-color: white;
+  padding: 100px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  background-color: rgb(202, 192, 133);
+  padding: 100px;
+}
+
+.guestbookImg {
+  height: 50px;
+  width: 50px;
+}
+
+.existingAccount {
+  color: rgb(179, 40, 179);
 }
