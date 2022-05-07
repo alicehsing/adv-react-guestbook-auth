@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import Header from './views/Header';
 import Home from './views/Home';
-import EntryList from './views/EntryList';
+import Guestbook from './views/Guestbook';
 import Authentication from './views/Authentication';
 import styles from './App.css';
 import { UserProvider } from './context/UserContext';
@@ -21,7 +21,7 @@ export default function App() {
           </Route>
           <PrivateRoute path="/guestbook">
             <Header />
-            <EntryList />
+            <Guestbook />
           </PrivateRoute>
         </Switch>
       </UserProvider>

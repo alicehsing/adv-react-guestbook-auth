@@ -4,7 +4,7 @@ import EntryForm from '../components/EntryForm';
 import { useUser } from '../context/UserContext';
 import { getEntries } from '../services/entries';
 
-export default function EntryList() {
+export default function Guestbook() {
   const [entries, setEntries] = useState([]);
   const { user } = useUser();
 

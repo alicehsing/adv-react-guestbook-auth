@@ -25,6 +25,7 @@ export default function EntryForm({ AddEntry }) {
           required
           value={content}
           onChange={({ target }) => setContent(target.value)}
+          placeholder="Content"
           className={styles.entry_text}
         />
         <button

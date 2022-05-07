@@ -116,6 +116,16 @@ body,
   gap: 1rem;
 }
 
+.entry_form button {
+  background-color: rgb(118, 48, 167);
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+  border: transparent;
+  width: 120px;
+  height: 50px;
+}
+
 .entry_text {
   width: 350px;
   height: 100px;
@@ -155,4 +165,7 @@ body,
 
 .signInSignOut p {
   color: rgb(40, 40, 38);
+}
+
+.entry {
 }
