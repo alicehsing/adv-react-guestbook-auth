@@ -64,10 +64,10 @@ export default function Authentication() {
                 onChange={(event) => setPassword(event.target.value)}
               />
             </label>
-            <label>
+            <div>
               <button onClick={handleSignIn}>Sign In</button>
               <button onClick={handleSignUp}>Sign Up</button>
-            </label>
+            </div>
           </form>
           <p className={styles.error}>{error}</p>
         </div>
