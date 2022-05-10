@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import { getUser, signInUser, signUpUser } from '../services/user';
+import { getUser, signInUser, signOutUser, signUpUser } from '../services/user';
 
 // create a big bucket for us to store state into
 export const UserContext = createContext();
@@ -35,6 +35,7 @@ export const UserProvider = ({ children }) => {
   //sign out function
   async function logout() {
     setUser({ email: null });
+    signOutUser();
   }
 
   return (
