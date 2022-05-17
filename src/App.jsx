@@ -11,20 +11,18 @@ import { UserProvider } from './context/UserContext';
 export default function App() {
   return (
     <main className={styles.main}>
-      <UserProvider>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Authentication />
-          </Route>
-          <PrivateRoute path="/guestbook">
-            <Header />
-            <Guestbook />
-          </PrivateRoute>
-        </Switch>
-      </UserProvider>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/login">
+          <Authentication />
+        </Route>
+        <PrivateRoute path="/guestbook">
+          <Header />
+          <Guestbook />
+        </PrivateRoute>
+      </Switch>
     </main>
   );
 }
